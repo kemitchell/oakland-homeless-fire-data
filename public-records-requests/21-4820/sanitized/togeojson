@@ -18,6 +18,7 @@ process.stdout.write(JSON.stringify(
         return {
           type: 'Feature',
           geometry: {
+            type: 'Point',
             coordinates: [
               get(line, 'Longitude'),
               get(line, 'Latitude')
