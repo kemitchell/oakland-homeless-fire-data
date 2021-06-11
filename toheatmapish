@@ -9,7 +9,7 @@ function get (line, field) {
   return line[index]
 }
 
-const spread = 0.0005
+const spread = 0.00075
 
 process.stdout.write(JSON.stringify(
   {
