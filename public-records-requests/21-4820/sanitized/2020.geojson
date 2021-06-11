@@ -1,6 +1,19 @@
 {
-  "type": "Feature Collection",
+  "type": "FeatureCollection",
   "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          null,
+          null
+        ]
+      },
+      "properties": {
+        "marker-size": "medium",
+        "marker-color": "FF0000"
+      }
+    },
     {
       "type": "Feature",
       "geometry": {
