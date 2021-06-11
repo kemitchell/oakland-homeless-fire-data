@@ -13,7 +13,7 @@ const latSpread = 0.0008
 const longSpread = 0.00095
 
 function octagon (lat, long, latSpread, longSpread) {
-  return [
+  return [[
     [long - (1.0 * longSpread), lat - (0.5 * latSpread)],
     [long - (1.0 * longSpread), lat + (0.5 * latSpread)],
     [long - (0.5 * longSpread), lat + (1.0 * latSpread)],
@@ -23,7 +23,7 @@ function octagon (lat, long, latSpread, longSpread) {
     [long + (0.5 * longSpread), lat - (1.0 * latSpread)],
     [long - (0.5 * longSpread), lat - (1.0 * latSpread)],
     [long - (1.0 * longSpread), lat - (0.5 * latSpread)]
-  ]
+  ]]
 }
 
 process.stdout.write(JSON.stringify(
@@ -37,7 +37,7 @@ process.stdout.write(JSON.stringify(
         return {
           type: 'Feature',
           geometry: {
-            type: 'Polygon',
+            type: 'MultiPolygon',
             coordinates: [
               octagon(lat, long, latSpread, longSpread),
               octagon(lat, long, 2 * latSpread, 2 * longSpread)
