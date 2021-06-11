@@ -25,11 +25,15 @@ process.stdout.write(JSON.stringify(
             type: 'Polygon',
             coordinates: [
               [
-                [long - spread, lat - spread],
-                [long - spread, lat + spread],
-                [long + spread, lat + spread],
-                [long + spread, lat - spread],
-                [long - spread, lat - spread]
+                [long - (1.0 * spread), lat - (0.5 * spread)],
+                [long - (1.0 * spread), lat + (0.5 * spread)],
+                [long - (0.5 * spread), lat + (1.0 * spread)],
+                [long + (0.5 * spread), lat + (1.0 * spread)],
+                [long + (1.0 * spread), lat + (0.5 * spread)],
+                [long + (1.0 * spread), lat - (0.5 * spread)],
+                [long + (0.5 * spread), lat - (1.0 * spread)],
+                [long - (0.5 * spread), lat - (1.0 * spread)],
+                [long - (1.0 * spread), lat - (0.5 * spread)]
               ]
             ]
           },
