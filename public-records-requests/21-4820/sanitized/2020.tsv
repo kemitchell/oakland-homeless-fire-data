@@ -85,7 +85,7 @@ Date	Event	Recorded Address	Latitude	Longitude	Geolocated Address	Geolocator
 2020-02-10	FOF200210010622	2100 EMBARCADERO	37.77998142344	-122.24257642169	2100, Embarcadero, Jingletown, Oakland, Alameda County, California, 94606, United States of America	geoloky
 2020-02-11	FOF200211010781	1995 EMBARCADERO	37.783791437521	-122.24328254167	1995, Embarcadero, San Antonio, Oakland, Alameda County, California, 94606, United States of America	geoloky
 2020-02-11	FOF200211010787	12TH ST & LAKE MERRITT BLVD	37.799070038739	-122.26190990874	12th St & Lake Merritt Blvd, Oakland, California, 94607	geoloky
-2020-02-11	FOF200211010953	34TH ST & WOOD ST	37.82455	-122.2907		manual, openstreetmap
+2020-02-11	FOF200211010953	34TH ST & WOOD ST	37.824570051313	-122.2906398877		manual, openstreetmap
 2020-02-11	FOF200211010975	5TH ST & BROADWAY	37.798160057421	-122.2750399086	5th St & Broadway, Oakland, California, 94607	geoloky
 2020-02-12	FOF200212011044	3601 TELEGRAPH AV	37.8372721	-122.2623213	Telegraph Avenue, Temescal, Oakland, Alameda County, California, 94609, United States of America	geoloky
 2020-02-12	FOF200212011079	1925 BRUSH ST	37.8129958	-122.2746758	Brush Street, San Pablo Gateway, Oakland, Alameda County, California, 94612-2202, United States of America	geoloky
@@ -192,7 +192,7 @@ Date	Event	Recorded Address	Latitude	Longitude	Geolocated Address	Geolocator
 2020-04-10	FOF200410025523	11TH ST & BRUSH ST	37.8052283	-122.2802435	11th Street & Brush Street, 11th Street, Old Oakland Historic District, Oakland, Alameda County, California, 94607, United States of America	geoloky
 2020-04-11	FOF200411025695	E 12TH ST & 18TH AV	37.786290025239	-122.24283990555	E 12th St & 18th Ave, Oakland, California, 94606	geoloky
 2020-04-12	FOF200412025818	1801 14TH ST	37.814171	-122.299712	1801, 14th Street, Lower Bottoms, Oakland, Alameda County, California, 94607, United States of America	geoloky
-2020-04-13	FOF200413026103	34TH ST & WOOD ST	37.824570051313	-122.2906398877	34th St & Wood St, Emeryville, California, 94608	geoloky
+2020-04-13	FOF200413026103	34TH ST & WOOD ST	37.82455	-122.2907		manual, openstreetmap
 2020-04-15	FOF200415026665	COOLIDGE AV & EB I580	37.796660032029	-122.21059992081	Coolidge Ave & I-580 W, Oakland, California, 94602	geoloky
 2020-04-16	FOF200416026798	36TH ST & WEBSTER ST	37.823790031403	-122.26200990484	36th St & Webster St, Oakland, California, 94609	geoloky
 2020-04-17	FOF200417026925	5TH ST & NB I880	37.803030026985	-122.28910993891	5th St & I-880 N, Oakland, California, 94607	geoloky
@@ -235,7 +235,7 @@ Date	Event	Recorded Address	Latitude	Longitude	Geolocated Address	Geolocator
 2020-05-20	FOF200520034615	6TH ST & MARKET ST	37.797627833333	-122.28467795833	6, Market Street, Port Of Oakland Chester P. Howard Terminal, Oakland, Alameda County, California, 94607, United States of America	geoloky
 2020-05-20	FOF200520034616	HANOVER AV & LAKESHORE AV	37.802470032034	-122.25405992114	Hanover Ave & Lakeshore Ave, Oakland, California, 94606	geoloky
 2020-05-21	FOF200521034868	7TH ST & BRUSH ST	37.802290030663	-122.28131988192	7th St & Brush St, Oakland, California, 94607	geoloky
-2020-05-23	FOF200523035327	34TH ST & WOOD ST	37.824570051313	-122.2906398877	34th St & Wood St, Emeryville, California, 94608	geoloky
+2020-05-23	FOF200523035327	34TH ST & WOOD ST	37.824570051313	-122.2906398877	34th St & Wood St, Emeryville, California, 94608	manual, openstreetmap
 2020-05-24	FOF200524035648	34TH ST & ELM ST	37.82220002628	-122.2652199223	34th St & Elm St, Oakland, California, 94609	geoloky
 2020-05-25	FOF200525035809	2ND AV & INTERNATIONAL BLVD	37.797930057998	-122.25627995201	2nd Ave & International Blvd, Oakland, California, 94606	geoloky
 2020-05-25	FOF200525035930	3RD ST & FILBERT ST	37.800350039173	-122.28601995031	3rd St & Filbert St, Oakland, California, 94607	geoloky
@@ -347,7 +347,7 @@ Date	Event	Recorded Address	Latitude	Longitude	Geolocated Address	Geolocator
 2020-08-02	FOF200802052793	CLAREMONT AV & HUDSON ST	37.843147	-122.2571661	Claremont Avenue & Hudson Street, Claremont Avenue, Temescal, Oakland, Alameda County, California, 94609, United States of America	geoloky
 2020-08-02	FOF200802052801	7TH ST & KIRKHAM ST	37.804720028213	-122.29232993084	7th St & Kirkham St, Oakland, California, 94607	geoloky
 2020-08-03	FOF200803053136	766 MOORPARK AV	37.731758997651	-122.17396899228	766 Moorpark St, Oakland, California, 94603	geoloky
-2020-08-04	FOF200804053272	34TH ST & WOOD ST	37.824570051313	-122.2906398877	34th St & Wood St, Emeryville, California, 94608	geoloky
+2020-08-04	FOF200804053272	34TH ST & WOOD ST	37.824570051313	-122.2906398877		manual, openstreetmap
 2020-08-04	FOF200804053311	36TH ST & MARTIN LUTHER KING JR WY	37.825080048211	-122.26958991134	36th St & Martin Luther King Jr Way, Oakland, California, 94609	geoloky
 2020-08-05	FOF200805053401	NORTHGATE AV & SYCAMORE ST	37.81542003053	-122.27023992793	Northgate Ave & Sycamore St, Oakland, California, 94612	geoloky
 2020-08-06	FOF200806053829	1201 41ST AV	37.772501	-122.218058	1201, 41st Avenue, Fruitvale, Oakland, Alameda County, California, 94601, United States of America	geoloky
@@ -515,7 +515,7 @@ Date	Event	Recorded Address	Latitude	Longitude	Geolocated Address	Geolocator
 2020-11-17	FOF201117079650	7TH ST & BRUSH ST	37.802290030663	-122.28131988192	7th St & Brush St, Oakland, California, 94607	geoloky
 2020-11-19	FOF201119079894	ALAMEDA AV & FRUITVALE AV	37.7680722	-122.2210434	Alameda Avenue, Fruitvale, Oakland, Alameda County, California, 94601, United States of America	geoloky
 2020-11-19	FOF201119079922	7200 SAN LEANDRO ST	37.7722695	-122.2205966	San Leandro Street, Fruitvale, Oakland, Alameda County, California, 94601, United States of America	geoloky
-2020-11-19	FOF201119079926	34TH ST & WOOD ST	37.824570051313	-122.2906398877	34th St & Wood St, Emeryville, California, 94608	geoloky
+2020-11-19	FOF201119079926	34TH ST & WOOD ST	37.824570051313	-122.2906398877		manual, openstreetmap
 2020-11-19	FOF201119080009	23RD ST & MARTIN LUTHER KING JR WY	37.813260055991	-122.27254989663	23rd St & Martin Luther King Jr Way, Oakland, California, 94612	geoloky
 2020-11-19	FOF201119080021	GRAND AV & HARRISON ST	37.8108208	-122.2626986	Grand Avenue & Harrison Street, Grand Avenue, Financial District, Oakland, Alameda County, California, 94612, United States of America	geoloky
 2020-11-19	FOF201119080097	E 12TH ST & 46TH AV	37.76993	-122.21339		manual, openstreetmap
@@ -558,7 +558,7 @@ Date	Event	Recorded Address	Latitude	Longitude	Geolocated Address	Geolocator
 2020-12-08	FOF201208084325	2301 EMBARCADERO	37.779186	-122.242721	2301, Embarcadero, Jingletown, Oakland, Alameda County, California, 94606, United States of America	geoloky
 2020-12-08	FOF201208084375	34TH ST & ANDOVER ST	37.821980043232	-122.26417989575	34th St & Andover St, Oakland, California, 94609	geoloky
 2020-12-08	FOF201208084443	3400 TELEGRAPH AV	37.8227363	-122.26550250755	Walgreens, 3400, Telegraph Avenue, Mosswood, Oakland, Alameda County, California, 94609, United States of America	geoloky
-2020-12-10	FOF201210084880	34TH ST & WOOD ST	37.824570051313	-122.2906398877	34th St & Wood St, Emeryville, California, 94608	geoloky
+2020-12-10	FOF201210084880	34TH ST & WOOD ST	37.824570051313	-122.2906398877		manual, openstreetmap
 2020-12-11	FOF201211085091	55 SANTA CLARA AV	37.820388122449	-122.25494030612	55, Santa Clara Avenue, Harrison/Oakland, Oakland, Alameda County, California, 94610, United States of America	geoloky
 2020-12-11	FOF201211085239	5TH AV & EMBARCADERO	37.790170050128	-122.26002993167	5th Ave & Embarcadero, Oakland, California, 94606	geoloky
 2020-12-12	FOF201212085327	E 12TH ST & 19TH AV	37.7921407	-122.2514854	East 12th Street, San Antonio, Oakland, Alameda County, California, 94606-3636, United States of America	geoloky
