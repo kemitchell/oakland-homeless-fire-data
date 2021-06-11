@@ -34,7 +34,8 @@ process.stdout.write(JSON.stringify(
             ]
           },
           properties: {
-            'fill-color': 'FF0000',
+            'stroke-opacity': 0.0,
+            'fill': 'FF0000',
             'fill-opacity': 0.1,
             date: get(line, 'Date')
           }
