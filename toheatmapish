@@ -40,13 +40,14 @@ process.stdout.write(JSON.stringify(
             type: 'MultiPolygon',
             coordinates: [
               octagon(lat, long, latSpread, longSpread),
-              octagon(lat, long, 2 * latSpread, 2 * longSpread)
+              octagon(lat, long, 2 * latSpread, 2 * longSpread),
+              octagon(lat, long, 3 * latSpread, 3 * longSpread)
             ]
           },
           properties: {
             'stroke-opacity': 0.0,
             fill: '#FF0000',
-            'fill-opacity': 0.05,
+            'fill-opacity': 0.025,
             date: get(line, 'Date')
           }
         }
