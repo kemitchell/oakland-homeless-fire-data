@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+const tsv = require('fs').readFileSync('./2020-combined.tsv', 'utf8')
+const lines = tsv.trim().split('\n').map(line => line.split('\t'))
+
+const fields = lines[0]
+function get (line, field) {
+  const index = fields.indexOf(field)
+  return line[index]
+}
+
+process.stdout.write(JSON.stringify(
+  {
+    type: 'Feature Collection',
+    features: lines
+      .slice(1)
+      .map(line => {
+        return {
+          type: 'Feature',
+          geometry: {
+            coordinates: [
+              get(line, 'Latitude'),
+              get(line, 'Longitude')
+            ]
+          },
+          properties: {
+            'marker-size': 'medium',
+            'marker-color': 'FF0000',
+            date: get(line, 'date')
+          }
+        }
+      })
+  }, null, 2
+)
+)
