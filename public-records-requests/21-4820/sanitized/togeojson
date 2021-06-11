@@ -27,7 +27,7 @@ process.stdout.write(JSON.stringify(
           properties: {
             'marker-size': 'small',
             'marker-color': 'FF0000',
-            'marker-symbol': 'fire-station-11',
+            'marker-symbol': 'fire-station',
             date: get(line, 'Date')
           }
         }
