@@ -5,6 +5,7 @@ const lines = tsv.trim().split('\n').map(line => line.split('\t'))
 const fields = lines[0]
 function get (line, field) {
   const index = fields.indexOf(field)
+  if (index === -1) throw new Error(`No such field: ${field}`)
   return line[index]
 }
 
@@ -18,14 +19,14 @@ process.stdout.write(JSON.stringify(
           type: 'Feature',
           geometry: {
             coordinates: [
-              get(line, 'Latitude'),
-              get(line, 'Longitude')
+              get(line, 'Longitude'),
+              get(line, 'Latitude')
             ]
           },
           properties: {
             'marker-size': 'medium',
             'marker-color': 'FF0000',
-            date: get(line, 'date')
+            date: get(line, 'Date')
           }
         }
       })
