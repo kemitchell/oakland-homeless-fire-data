@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+const tsv = require('fs').readFileSync('/dev/stdin', 'utf8')
+const lines = tsv.trim().split('\n').map(line => line.split('\t'))
+
+const fields = lines[0]
+function get (line, field) {
+  const index = fields.indexOf(field)
+  if (index === -1) throw new Error(`No such field: ${field}`)
+  return line[index]
+}
+
+const spread = 0.001
+
+process.stdout.write(JSON.stringify(
+  {
+    type: 'FeatureCollection',
+    features: lines
+      .slice(1)
+      .map(line => {
+        const long = get(line, 'Longitude')
+        const lat = get(line, 'Latitude')
+        return {
+          type: 'Feature',
+          geometry: {
+            type: 'Polygon',
+            coordinates: [
+              [long - spread, lat - spread],
+              [long + spread, lat + spread],
+              [long + spread, lat + spread],
+              [long - spread, lat - spread]
+            ]
+          },
+          properties: {
+            'fill-color': 'FF0000',
+            'fill-opacity': 0.1,
+            date: get(line, 'Date')
+          }
+        }
+      })
+  }, null, 2
+)
+)
