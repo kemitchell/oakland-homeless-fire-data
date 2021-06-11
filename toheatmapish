@@ -17,8 +17,8 @@ process.stdout.write(JSON.stringify(
     features: lines
       .slice(1)
       .map(line => {
-        const long = get(line, 'Longitude')
-        const lat = get(line, 'Latitude')
+        const long = parseFloat(get(line, 'Longitude'))
+        const lat = parseFloat(get(line, 'Latitude'))
         return {
           type: 'Feature',
           geometry: {
