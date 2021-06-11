@@ -12,6 +12,20 @@ function get (line, field) {
 const latSpread = 0.0008
 const longSpread = 0.00095
 
+function octagon (lat, long, latSpread, longSpread) {
+  return [
+    [long - (1.0 * longSpread), lat - (0.5 * latSpread)],
+    [long - (1.0 * longSpread), lat + (0.5 * latSpread)],
+    [long - (0.5 * longSpread), lat + (1.0 * latSpread)],
+    [long + (0.5 * longSpread), lat + (1.0 * latSpread)],
+    [long + (1.0 * longSpread), lat + (0.5 * latSpread)],
+    [long + (1.0 * longSpread), lat - (0.5 * latSpread)],
+    [long + (0.5 * longSpread), lat - (1.0 * latSpread)],
+    [long - (0.5 * longSpread), lat - (1.0 * latSpread)],
+    [long - (1.0 * longSpread), lat - (0.5 * latSpread)]
+  ]
+}
+
 process.stdout.write(JSON.stringify(
   {
     type: 'FeatureCollection',
@@ -25,23 +39,14 @@ process.stdout.write(JSON.stringify(
           geometry: {
             type: 'Polygon',
             coordinates: [
-              [
-                [long - (1.0 * longSpread), lat - (0.5 * latSpread)],
-                [long - (1.0 * longSpread), lat + (0.5 * latSpread)],
-                [long - (0.5 * longSpread), lat + (1.0 * latSpread)],
-                [long + (0.5 * longSpread), lat + (1.0 * latSpread)],
-                [long + (1.0 * longSpread), lat + (0.5 * latSpread)],
-                [long + (1.0 * longSpread), lat - (0.5 * latSpread)],
-                [long + (0.5 * longSpread), lat - (1.0 * latSpread)],
-                [long - (0.5 * longSpread), lat - (1.0 * latSpread)],
-                [long - (1.0 * longSpread), lat - (0.5 * latSpread)]
-              ]
+              octagon(lat, long, latSpread, longSpread),
+              octagon(lat, long, 2 * latSpread, 2 * longSpread)
             ]
           },
           properties: {
             'stroke-opacity': 0.0,
             fill: '#FF0000',
-            'fill-opacity': 0.1,
+            'fill-opacity': 0.05,
             date: get(line, 'Date')
           }
         }
