@@ -9,7 +9,8 @@ function get (line, field) {
   return line[index]
 }
 
-const spread = 0.00075
+const latSpread = 0.00075
+const longSpread = 0.0005
 
 process.stdout.write(JSON.stringify(
   {
@@ -25,15 +26,15 @@ process.stdout.write(JSON.stringify(
             type: 'Polygon',
             coordinates: [
               [
-                [long - (1.0 * spread), lat - (0.5 * spread)],
-                [long - (1.0 * spread), lat + (0.5 * spread)],
-                [long - (0.5 * spread), lat + (1.0 * spread)],
-                [long + (0.5 * spread), lat + (1.0 * spread)],
-                [long + (1.0 * spread), lat + (0.5 * spread)],
-                [long + (1.0 * spread), lat - (0.5 * spread)],
-                [long + (0.5 * spread), lat - (1.0 * spread)],
-                [long - (0.5 * spread), lat - (1.0 * spread)],
-                [long - (1.0 * spread), lat - (0.5 * spread)]
+                [long - (1.0 * longSpread), lat - (0.5 * latSpread)],
+                [long - (1.0 * longSpread), lat + (0.5 * latSpread)],
+                [long - (0.5 * longSpread), lat + (1.0 * latSpread)],
+                [long + (0.5 * longSpread), lat + (1.0 * latSpread)],
+                [long + (1.0 * longSpread), lat + (0.5 * latSpread)],
+                [long + (1.0 * longSpread), lat - (0.5 * latSpread)],
+                [long + (0.5 * longSpread), lat - (1.0 * latSpread)],
+                [long - (0.5 * longSpread), lat - (1.0 * latSpread)],
+                [long - (1.0 * longSpread), lat - (0.5 * latSpread)]
               ]
             ]
           },
