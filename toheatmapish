@@ -9,8 +9,8 @@ function get (line, field) {
   return line[index]
 }
 
-const latSpread = 0.0007
-const longSpread = 0.00085
+const latSpread = 0.0008
+const longSpread = 0.00095
 
 process.stdout.write(JSON.stringify(
   {
