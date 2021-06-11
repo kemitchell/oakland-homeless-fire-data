@@ -9,7 +9,7 @@ function get (line, field) {
   return line[index]
 }
 
-const spread = 0.001
+const spread = 0.0001
 
 process.stdout.write(JSON.stringify(
   {
@@ -35,7 +35,7 @@ process.stdout.write(JSON.stringify(
           },
           properties: {
             'stroke-opacity': 0.0,
-            'fill': '#FF0000',
+            fill: '#FF0000',
             'fill-opacity': 0.1,
             date: get(line, 'Date')
           }
