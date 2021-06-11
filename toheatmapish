@@ -24,10 +24,12 @@ process.stdout.write(JSON.stringify(
           geometry: {
             type: 'Polygon',
             coordinates: [
-              [long - spread, lat - spread],
-              [long + spread, lat + spread],
-              [long + spread, lat + spread],
-              [long - spread, lat - spread]
+              [
+                [long - spread, lat - spread],
+                [long + spread, lat + spread],
+                [long + spread, lat + spread],
+                [long - spread, lat - spread]
+              ]
             ]
           },
           properties: {
