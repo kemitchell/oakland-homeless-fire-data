@@ -51,7 +51,7 @@ process.stdout.write(JSON.stringify(
           properties: {
             'stroke-opacity': 0.0,
             fill: '#FF0000',
-            'fill-opacity': 0.025,
+            'fill-opacity': datePrefix ? 0.25 : 0.025,
             date: get(line, 'Date')
           }
         }
