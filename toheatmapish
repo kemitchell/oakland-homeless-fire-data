@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const tsv = require('fs').readFileSync('/dev/stdin', 'utf8')
 const lines = tsv.trim().split('\n').map(line => line.split('\t'))
+const datePrefix = process.argv[2]
 
 const fields = lines[0]
 function get (line, field) {
@@ -31,6 +32,9 @@ process.stdout.write(JSON.stringify(
     type: 'FeatureCollection',
     features: lines
       .slice(1)
+      .filter(line => {
+        return !datePrefix || get(line, 'Date').startsWith(datePrefix)
+      })
       .map(line => {
         const long = parseFloat(get(line, 'Longitude'))
         const lat = parseFloat(get(line, 'Latitude'))
